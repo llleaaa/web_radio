@@ -51,8 +51,20 @@
         margin: auto;
       }
 
-      .circle {
+      .box2 {
+        width: 60px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #696969;
+        position: relative;
+        top: -10px;
+        margin: auto;
+        z-index: 3;
+      }
 
+      .circle {
         width: 50px;
         height: 50px;
         margin: 13px 0;
@@ -65,8 +77,59 @@
       .quare{
         width: 60px;
         height: 40px;
-        border: 1px solid #666;
-        margin: 0 20px;
+        border: 19px solid #101010;
+        margin: 0 5px;
+        z-index: 3;
+      }
+
+      .two_circle_l {
+        color: #fff;
+        text-align: center;
+        width: 45px;
+        height: 45px;
+        line-height: 42px;
+        border-radius: 50%;
+        background-color: #724832;/*rgba(31, 1, 0, 0.9);*/
+        float: left;
+        position: absolute;
+        top: 15px;
+        left: 73px;
+      }
+
+      .two_circle_r {
+        color: #fff;
+        text-align: center ;
+        width: 37px;
+        height: 37px;
+        line-height: 34px;
+        border-radius: 50%;
+        background-color: #724832;/*rgba(31, 1, 0, 0.9);*/
+        float: left;
+        position: absolute;
+        top: 19.5px;
+        left: 129px;
+      }
+
+      .circle_mind_l {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #888888;
+        z-index: 2;
+        top: 15px;
+        left: 10px;
+        position: relative;
+      }
+
+      .circle_mind_r {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #888888;
+        z-index: 2;
+        top: 10px;
+        left: 13px;
+        position: relative;
       }
 
       .bottom{
@@ -198,8 +261,21 @@
         <div class="box">
           <div class="circle"></div>
           <div class="quare"></div>
+
           <div class="circle"></div>
+          <div class="two_circle_l">
+            <div class="inner_circle l">
+              <div class="circle_mind_l"></div>
+            </div>
+          </div>
+          <div class="two_circle_r">
+            <div class="inner_circle r">
+              <div class="circle_mind_r"></div>
+            </div>
+          </div>
+
         </div>
+        <div class="box2"></div>
       </div>
       <div class="bottom">
         <h1>Chiu Lea</h1>
