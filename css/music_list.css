@@ -1,0 +1,9 @@
+*{ margin: 0; padding: 0; }
+
+.list-group {
+    text-align: center;
+    width: 700px;
+    height: 50vh;
+    border: 3px solid #c1dfc4;
+    margin: 10px auto;
+}
