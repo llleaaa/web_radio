@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
 .label{
     width: 450px;
     height: 100px;
@@ -125,47 +129,110 @@
 /* video */
 .main{  
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-column-gap: 20px;
-    margin-top: 15px;
+    grid-template-columns: 7fr 5fr;
+    grid-column-gap: 30px;
+    margin-top: 10px;
+    
 }
 
 .video_area{
-    width: 85%;
-    height: 150vh;
+    width: 90%;
     background-color: #badc58;
-    margin-left: 10%;
-}
-.video{
-    text-align: center;
-    width: 560px;
-    height: 315px;
-    margin: 1% auto;
+    justify-self: end;
+    margin-left: 35px;
+
 }
 
+/*RWD Youtube 以及 Vimeo start*/
+
+.video-container{
+    position:relative;
+    padding-bottom:56.25%;
+    /*padding-top:30px;*/
+    height:0;
+    overflow:hidden;
+    }
+
+.video-container iframe,.video-container object,.video-container embed{  
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+}
+
+/*RWD Youtube 以及 Vimeo end*/
+
 .favariate {
-    width: 85%;
-    height: 80vh;
+    width: 95%;
     background-color: #fab1a0;
     margin: 1% auto;
 }
 
 .side_search{
-    width: 85%;
-    height: 100vh;
+    width: 95%;
     background-color: #81ecec;
 }
 
 .top_search{
-    width: 70%;
+    width: 85%;
     height: 35px;
     background-color: #fff;
     margin: 10px auto;
 }
 
 .list{
-    width: 90%;
-    height: 80vh;
+    position: relative;
+    width: 100%;
     background-color: #f7f1e3;
-    margin: 10px auto;
+    margin: auto;
 }
+
+.article{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 20px 0 5px;
+}
+
+.article:hover{
+    border: 2px solid #ffeaa7;
+    border-radius: 4px;
+}
+
+.thumb{
+    width: 180px;
+    height: 104px;
+}
+
+.details{
+    padding: 8px 30px 8px 10px;
+    position: relative;
+}
+
+.details h4{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: .7rem;
+}
+
+.details p{
+    padding: 0;
+    margin: 0;
+    font-size: .6rem;
+    color: grey;
+
+
+}
+
+/*.addfavariate{
+    position: relative;
+    top: -50px;
+    left: 260px;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    background-color: pink;
+    outline: none;
+}*/
