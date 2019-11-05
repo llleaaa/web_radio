@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/radio.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main_search.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
     <style>
 
     </style>
@@ -61,7 +64,9 @@
 
     <form class="start">
       <input type="text" class="main_search" placeholder="搜尋" required>
-      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="submit" class="submit" value="search" required>
     </form>
+    <div class="results"></div>
+    </div>
   </body>
 </html>

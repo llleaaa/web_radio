@@ -293,20 +293,40 @@
     transition: .3s;
 }
 
-.start i {
-    position: relative;
-    top: 4px;
-    left: -360px;
-    color: #aaa;
+.start{
+    margin-top: 20px;
 }
 
 
 .main_search {
     width: 300px;
     padding: 10px;
-    margin: 30px 10px 10px;
     border: 2px solid #ddd;
-    border-radius: 50px;
+    border-radius: 50px 0 0 50px;
     outline: none;
 }
 
+.submit{
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 0 50px 50px 0;
+    outline: none;
+    color: #fff;
+    background-color: #f0932b;
+}
+
+.results{
+    display: flex;
+}
+
+.results h2{
+    height: 45px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.item{
+    margin: 10px 10px 0;
+}
