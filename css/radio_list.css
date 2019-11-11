@@ -132,12 +132,13 @@
     grid-template-columns: 7fr 5fr;
     grid-column-gap: 30px;
     margin-top: 10px;
+    background-color: #f1f2f6;
     
 }
 
 .video_area{
     width: 90%;
-    background-color: #badc58;
+    background-color: #f1f2f6;
     justify-self: end;
     margin-left: 35px;
 
@@ -163,29 +164,12 @@
 
 /*RWD Youtube 以及 Vimeo end*/
 
+/*favariate area start*/
+
 .favariate {
-    width: 95%;
-    background-color: #fab1a0;
+    /*width: 95%;*/
+    background-color: #f1f2f6;
     margin: 1% auto;
-}
-
-.side_search{
-    width: 95%;
-    background-color: #81ecec;
-}
-
-.top_search{
-    width: 85%;
-    height: 35px;
-    background-color: #fff;
-    margin: 10px auto;
-}
-
-.list{
-    position: relative;
-    width: 100%;
-    background-color: #f7f1e3;
-    margin: auto;
 }
 
 .article{
@@ -196,8 +180,8 @@
 }
 
 .article:hover{
-    border: 2px solid #ffeaa7;
-    border-radius: 4px;
+    background-color: #b7e99471;
+    cursor: pointer;
 }
 
 .thumb{
@@ -222,17 +206,109 @@
     margin: 0;
     font-size: .6rem;
     color: grey;
-
-
 }
 
-/*.addfavariate{
+.delete{
+    display: inline;
+    transform: scale(1.2);
     position: relative;
-    top: -50px;
-    left: 260px;
-    width: 30px;
-    height: 30px;
+    left: 100%;
+    color: #273c75;
     padding: 15px;
-    background-color: pink;
+}
+
+.delete:hover{
+    color: chocolate;
+    cursor: pointer;
+}
+
+.fa fa-trash-o{
+    
+}
+
+/*side_search area*/
+
+.side_search{
+    width: 95%;
+    background-color: #f1f2f6;
+}
+.side_search input[type=search]{
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.top_search{
+    width: 75%;
+    height: 35px;
+    background-color: #fff;
+    margin: 10px;
     outline: none;
-}*/
+}
+
+.top_submit{
+    text-align: center;
+    width: 50px;
+    height: 37px;
+    outline: none;
+    border: 1px solid #aaa;
+    background-color: #fa0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/*list area*/ 
+
+.list{
+    position: relative;
+    width: 100%;
+    background-color: #f1f2f6;
+    margin: auto;
+}
+
+.side_article{
+    display: flex;
+    padding: 8px 20px 0 5px;
+    position: relative;
+    height: 130px;
+}
+
+.side_article:hover{
+    background-color: #b7e99471;
+}
+
+.side_article iframe{
+    width: 180px;
+    height: 104px;
+}
+
+.side_details{
+    cursor: pointer;
+    padding: 0 30px 20px 10px;
+    position: relative;
+    
+}
+
+.side_details h4{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: .7rem;
+}
+
+.side_details p{
+    padding: 0;
+    margin: auto;
+    font-size: .6rem;
+    color: grey;
+}
+
+.side_collection{
+    position: absolute;
+    top: -5%;
+    left: 92%;
+    display: inline;
+    padding: 0 15px;
+    color: darkorange;
+    cursor: pointer;
+}

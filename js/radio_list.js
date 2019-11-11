@@ -6,8 +6,9 @@ $(document).ready(function () {
     var options = {
         part: 'snippet',
         key: key,
-        maxResults: 50,
+        maxResults: 25,
         playlistId: playlistId
+        
     }
 
     loodVids();
@@ -16,14 +17,16 @@ $(document).ready(function () {
         $.getJSON(URL, options, function (data) {
             console.log(data);
             var id = data.items[0].snippet.resourceId.videoId;
+            
             mainVid(id);
             resultsLoop(data);
+            
         })
     }
 
     function mainVid(id) {
         $('.video-container').html(`
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/${id}?autoplay=1" frameborder="0" allow="accelerometer;  autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         `);
     }
 
@@ -32,7 +35,7 @@ $(document).ready(function () {
 
             var thumb = item.snippet.thumbnails.medium.url;
             var title = item.snippet.title;
-            var desc = item.snippet.description.substring(0,100);
+            var desc = item.snippet.description.substring(0,90);
             var vid = item.snippet.resourceId.videoId;
 
             $('.favariate').append(`
@@ -41,14 +44,17 @@ $(document).ready(function () {
                     <div class="details">
                         <h4>${title}</h4>
                         <p>${desc}</p>
+                        <a class="delete" onclick="delete()"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                     </div>
                 </div>
             `);
-            });
-        }
+        });
+    }
 
-        $('.favariate').on('click', '.article', function(){
+   
+
+    $('.favariate').on('click', '.article', function(){
             var id = $(this).attr('data-key');
             mainVid(id);
-        });
+    });
 });

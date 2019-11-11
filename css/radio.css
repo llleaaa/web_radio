@@ -308,6 +308,7 @@
 
 .submit{
     font-size: 18px;
+    width: 55px;
     padding: 10px;
     border: 2px solid #ddd;
     border-radius: 0 50px 50px 0;
@@ -318,15 +319,24 @@
 
 .results{
     display: flex;
+    margin: 10px;
 }
 
 .results h2{
-    height: 45px;
     font-weight: 600;
     font-size: 16px;
-    margin-top: 20px;
+    height: 38px;
 }
 
 .item{
     margin: 10px 10px 0;
+}
+
+.main_collection{
+    display: inline;
+    padding: 0 15px;
+    color: darkorange;
+    cursor: pointer;
+    position: relative;
+    left: 68%;
 }

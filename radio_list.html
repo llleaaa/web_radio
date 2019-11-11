@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW"">
+<html lang="zh-Hant-TW">
 <head>
     <meta charset=" UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>radio page2</title>
-    <link rel="stylesheet" href="css/radio_list.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/radio_list.js"></script>
-    
-    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>radio page2</title>
+<link rel="stylesheet" href="css/radio_list.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/side_search.js"></script>
+<script src="js/radio_list.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+
+
 </head>
 
 <body>
@@ -37,72 +40,22 @@
     <div class="main">
         <div class="video_area">
             <div class="video-container">
-                    
+
             </div>
-            <div class="favariate">我的最愛
-                    
-            </div>
+            <div class="favariate">我的最愛</div>
         </div>
 
         <div class="side_search">
-            <div class="top_search">Search</div>
-            <div class="list">
-                <div class="article">
-                    <img src="https://i.ytimg.com/vi/Lv6EV478u3U/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBevP9dfgXStYuaj0nDz0m2Aim9yw" alt="" class="thumb">
-                    <div class="details">
-                        
-                        <h4>title</h4>
-                        <p>it is description</p>
-                        <button class="addfavariate"></button>
-                    </div>
-                    
-                </div>
-                <div class="article">
-                        <img src="https://i.ytimg.com/vi/Lv6EV478u3U/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBevP9dfgXStYuaj0nDz0m2Aim9yw" alt="" class="thumb">
-                        <div class="details">
-                            <h4>title</h4>
-                            <p>it is description</p>
-                        </div>
-                    </div>
-                    <div class="article">
-                            <img src="https://i.ytimg.com/vi/Lv6EV478u3U/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBevP9dfgXStYuaj0nDz0m2Aim9yw" alt="" class="thumb">
-                            <div class="details">
-                                <h4>title</h4>
-                                <p>it is description</p>
-                            </div>
-                        </div>
-                        <div class="article">
-                                <img src="https://i.ytimg.com/vi/Lv6EV478u3U/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBevP9dfgXStYuaj0nDz0m2Aim9yw" alt="" class="thumb">
-                                <div class="details">
-                                    <h4>title</h4>
-                                    <p>it is description</p>
-                                </div>
-                            </div>
-                            <div class="article">
-                                    <img src="https://i.ytimg.com/vi/Lv6EV478u3U/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBevP9dfgXStYuaj0nDz0m2Aim9yw" alt="" class="thumb">
-                                    <div class="details">
-                                        <h4>title</h4>
-                                        <p>it is description</p>
-                                    </div>
-                                </div>
-                                <div class="article">
-                                        <img src="https://i.ytimg.com/vi/Lv6EV478u3U/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBevP9dfgXStYuaj0nDz0m2Aim9yw" alt="" class="thumb">
-                                        <div class="details">
-                                            <h4>title</h4>
-                                            <p>it is description</p>
-                                        </div>
-                                    </div>
-                                    <div class="article">
-                                            <img src="https://i.ytimg.com/vi/Lv6EV478u3U/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBevP9dfgXStYuaj0nDz0m2Aim9yw" alt="" class="thumb">
-                                            <div class="details">
-                                                <h4>title</h4>
-                                                <p>it is description</p>
-                                            </div>
-                                        </div>
-                                                                                                    
-            </div>
+            <form action="">
+                <input type="search" class="top_search" autocomplete="off" placeholder="search..." required>
+                <button type="submit" class="top_submit" value="搜尋"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            
+            <div class="list"></div>
         </div>
     </div>
+
+    
 </body>
 
 </html>
