@@ -29,12 +29,6 @@ $(document).ready(function(){
             });
   
         });
-        $('.results').slick({
-            dots: false,
-            slidesToShow: 5,
-            slidesToScroll: 3,
-            touchMove: false
-          });
         
     });
     
@@ -43,7 +37,7 @@ $(document).ready(function(){
 
 
 function init(){
-    gapi.client.setApiKey("AIzaSyCfC5LZBXlwCyrEpyltdL9mVHRGqwvjh9g");
+    gapi.client.setApiKey("AIzaSyBOan_hm4qED12KzJbemsKuHU3f-38Lvbg");
     gapi.client.load("youtube", "v3", function(){
 
     });

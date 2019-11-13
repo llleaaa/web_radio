@@ -7,7 +7,7 @@ $(document).ready(function(){
             part: "snippet",
             type: "video",
             q: $(".top_search").val().replace(/%20/g, "+"),
-            maxResults: 20,
+            maxResults: 7,
             order: "viewCount",
             publishedAfter: "2015-01-01T00:00:00Z"
         });
@@ -31,18 +31,7 @@ $(document).ready(function(){
                         </div>
                         
                     </div>
-                `);
-                $(".delete").delete(`
-                    <div class="side_article">
-                        <iframe class="video w100" width="304" height="171" src="//www.youtube.com/embed/${videoid}" frameborder="0"></iframe>
-                        <div class="side_details">
-                            <h4>${title}</h4>
-                            <p>${desc}</p>
-                        <div class="side_collection"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                    </div>
-                 </div>
-        `);
-                
+                `);  
                 
             });
             
@@ -54,7 +43,7 @@ $(document).ready(function(){
 
 
 function init(){
-    gapi.client.setApiKey("AIzaSyCfC5LZBXlwCyrEpyltdL9mVHRGqwvjh9g");
+    gapi.client.setApiKey("AIzaSyBOan_hm4qED12KzJbemsKuHU3f-38Lvbg");
     gapi.client.load("youtube", "v3", function(){
 
     });

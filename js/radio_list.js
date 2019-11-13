@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var key = 'AIzaSyCfC5LZBXlwCyrEpyltdL9mVHRGqwvjh9g';
+    var key = 'AIzaSyBOan_hm4qED12KzJbemsKuHU3f-38Lvbg';
     var playlistId = 'PLWB-sLI81C12M612rq0ygdhHvyl1Y9ib7';
     var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
 
@@ -38,7 +38,7 @@ $(document).ready(function () {
             var desc = item.snippet.description.substring(0,90);
             var vid = item.snippet.resourceId.videoId;
 
-            $('.favariate').append(`
+            $('.favoriate').append(`
                 <div class="article" data-key="${vid}">
                     <img src="${thumb}" alt="" class="thumb">
                     <div class="details">
@@ -53,8 +53,8 @@ $(document).ready(function () {
 
    
 
-    $('.favariate').on('click', '.article', function(){
-            var id = $(this).attr('data-key');
-            mainVid(id);
+    $('.favoriate').on('click', '.article', function(){
+        var id = $(this).attr('data-key');
+        mainVid(id);
     });
 });
